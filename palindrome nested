@@ -1,0 +1,23 @@
+program to print palindrome upto n
+#include<stdio.h>
+void main()
+{
+	int num,r,sum,i,m,temp;
+	scanf("%d",&m);
+	for(num=1;num<=m;num++)
+	{
+		sum=0;
+		temp=num;
+		while(num!=0)
+		{
+		 r=num%10;
+      	 sum=sum*10+r;
+	    num=num/10;
+}
+    num=temp;
+    if(sum==num)
+{
+	printf("%d ",num);
+}
+}
+}
